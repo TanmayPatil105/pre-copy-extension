@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "pre-copy-extension",
+	"version": "1.0.0",
+	"description": "Add copy button to <pre> texts",
+	"author": "TanmayPatil105",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["extension.js"],
+			"css": ["style.css"]
+		}
+	],
+	"permissions": [
+			"clipboardWrite"
+	],
+	"applications": {
+		"gecko": {
+			"id": "pre-copy-extension@tanmay.app"
+		}
+	}
+}
